@@ -5,13 +5,13 @@ A Flutter project with custom animated login page and item liste view page with 
 ### Screenshots
 
 > Splash Screen
-![Splash Screen](/images/screenshots/splash_screen.jpeg =200x350)
+![Splash Screen](/images/screenshots/splash_screen.jpeg height="500em")
 
 > Login Page
-![Login Page](/images/screenshots/login_page.jpeg =200x350)
+![Login Page](/images/screenshots/login_page.jpeg height="500em")
 
 > Items List
-![Items List](/images/screenshots/items_list.jpeg =200x350)
+![Items List](/images/screenshots/items_list.jpeg height="500em")
 
 > Items List Dismissible
-![Items List Dismissible](/images/screenshots/items_list_dissmissible.jpeg =200x350)
+![Items List Dismissible](/images/screenshots/items_list_dissmissible.jpeg height="500em")
