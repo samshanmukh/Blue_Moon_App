@@ -30,6 +30,7 @@ class _FadeAnimationState extends State<FadeAnimation> with SingleTickerProvider
     ).animate(CurvedAnimation(
       parent: _controller,
       curve: Curves.easeInOutCubic,
+      // curve: Interval(0.6, 1.0, curve: Curves.decelerate),
     ));
   }
 

@@ -41,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             children: <Widget>[
               Container(
-                height: 300,
+                height: MediaQuery.of(context).size.height * 0.45,
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('images/background.png'),
@@ -53,7 +53,7 @@ class _LoginPageState extends State<LoginPage> {
                     Positioned(
                       left: 20,
                       width: 80,
-                      height: 170,
+                      height: MediaQuery.of(context).size.height * 0.25,
                       child: FadeAnimation(3, Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
@@ -66,7 +66,7 @@ class _LoginPageState extends State<LoginPage> {
                     Positioned(
                       left: 120,
                       width: 60,
-                      height: 130,
+                      height: MediaQuery.of(context).size.height * 0.18,
                       child: FadeAnimation(3.8, Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
@@ -80,7 +80,7 @@ class _LoginPageState extends State<LoginPage> {
                       right: 40,
                       top: 20,
                       width: 60,
-                      height: 130,
+                      height: MediaQuery.of(context).size.height * 0.22,
                       child: FadeAnimation(2.5, Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
@@ -92,7 +92,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     Positioned(
                       child: FadeAnimation(2.8, Container(
-                          margin: EdgeInsets.only(top: 60),
+                          margin: EdgeInsets.only(top: 80),
                           child: Center(
                             child: Text('Login', style: TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold))
                           ),
@@ -106,7 +106,7 @@ class _LoginPageState extends State<LoginPage> {
                 padding: EdgeInsets.all(30.0),
                 child: Column(
                   children: <Widget>[
-                    Container(
+                    FadeAnimation(1.4, Container(
                       padding: EdgeInsets.all(5),
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -121,8 +121,8 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       child: Column(
                         children: <Widget>[
-                          FadeAnimation(1.6, Container(
-                            padding: EdgeInsets.all(8.0),
+                          Container(
+                            padding: EdgeInsets.all(12.0),
                             decoration: BoxDecoration(
                               border: Border(bottom: BorderSide(color: Colors.grey[100]))
                             ),
@@ -134,9 +134,8 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                             ),
                           ),
-                          ),
-                          FadeAnimation(1.6, Container(
-                            padding: EdgeInsets.all(8.0),
+                          Container(
+                            padding: EdgeInsets.all(12.0),
                             child: TextField(
                               decoration: InputDecoration(
                                 border: InputBorder.none,
@@ -145,9 +144,9 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                             ),
                           ),
-                          ),
                         ],
                       ),
+                    ),
                     ),
                     SizedBox(height: 30,),
                     FadeAnimation(1.7, Container(
@@ -173,7 +172,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     ),
                     SizedBox(height: 40,),
-                    Text("Forgot Password?", style: TextStyle(color: Color.fromRGBO(143, 148, 251, 1))),
+                    FadeAnimation(1.4, Text("Forgot Password?", style: TextStyle(color: Color.fromRGBO(143, 148, 251, 1))),),
                   ],
                 ),
               ),
