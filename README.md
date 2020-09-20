@@ -10,6 +10,9 @@ A Flutter project with custom animated login page and item liste view page with 
 > Login Page
 <img src="/images/screenshots/login_page.jpeg" height="500em" />
 
+> Items List View
+<img src="/images/screenshots/item_list_view_2.jpeg" height="500em" />
+
 > Items List
 <img src="/images/screenshots/items_list.jpeg" height="500em" />
 
