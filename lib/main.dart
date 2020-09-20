@@ -203,15 +203,19 @@ class HomeScreen extends StatelessWidget {
 
     final _listBuilder = ListView.builder(
           // padding: const EdgeInsets.all(2),
-          itemCount: 100,
+          itemCount: 20,
           itemBuilder: (BuildContext context, int index) {
             final item = index;
             return Dismissible(
               key: Key(item.toString()),
               child: Container(
                 height: 70,
-                color: Colors.indigo[(Random().nextInt(1000)/100).ceil() * 100],
-                child: Center(child: Text("Item $index")),
+                // color: Colors.indigo[(Random().nextInt(1000)/100).ceil() * 100],
+                child: ListTile(
+                  leading: Icon(Icons.donut_large),
+                  title: Text("Item $index"),
+                  onTap: () => print("item $index tapped"),
+                ),
               ),
             );
           },
@@ -233,20 +237,30 @@ class HomeScreen extends StatelessWidget {
       ),
       body: _listBuilder,
     );
-  //   return CupertinoPageScaffold(
-  //     child: CustomScrollView(
-  //       physics: const BouncingScrollPhysics(
-  //         parent: AlwaysScrollableScrollPhysics(),
-  //       ),
-  //       slivers: [
-  //         SliverList(
-  //           delegate: SliverChildBuilderDelegate( (context, index) {
-  //             return ListTile(title: Text("titleOne"),);
-  //           }),
-  //         ),
-  //       ],
-  //     ),
-  //   );
+    // return Scaffold(
+    //   appBar: AppBar(
+    //     backgroundColor: Color.fromRGBO(143, 148, 251, 1),
+    //     title: Text("Hero List"),
+    //   ),
+    //   body: CupertinoPageScaffold(
+    //     child: CustomScrollView(
+    //       physics: const BouncingScrollPhysics(
+    //         parent: AlwaysScrollableScrollPhysics(),
+    //       ),
+    //       slivers: [
+    //         SliverList(
+    //           delegate: SliverChildBuilderDelegate( (context, index) {
+    //             return ListTile(
+    //               leading: Icon(Icons.donut_large),
+    //               title: Text("Item $index"),
+    //               onTap: () => print("item $index tapped.... $context"),
+    //             );
+    //           }),
+    //         ),
+    //       ],
+    //     ),
+    //   ),
+    // );
   }
 }
 
