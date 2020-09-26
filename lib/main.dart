@@ -204,6 +204,7 @@ class HomeScreen extends StatelessWidget {
     final _listBuilder = ListView.builder(
           // padding: const EdgeInsets.all(2),
           itemCount: 20,
+          physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics(),),
           itemBuilder: (BuildContext context, int index) {
             final item = index;
             return Dismissible(
